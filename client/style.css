@@ -9,17 +9,145 @@
 
 body {
   background: #343541;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  margin: 1em;
+}
+
+nav h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav h1 a {
+  color: gold;
+  text-decoration: none;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openBtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 0.5% 1%;
+  margin: 0.5rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.openBtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#mainNav {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  /* padding: 20px; */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+} */
+
+/* Toggle mode */
+.toggle-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5% 1%;
+  margin: 0.5rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.switchBtn {
+  font-size: 1.5rem;
+  padding: 0.5% 1%;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #343541;
+}
+
+main p {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: large;
+  font-family: cursive;
 }
 
 #app {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
+  width: 100%;
+  height: 100%;
   background: #343541;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 1.5rem;
 }
 
 #chat_container {
@@ -147,4 +275,49 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+.relativePos {
+  position: relative;
+}
+
+.absolutePos {
+  position: absolute;
+}
+
+footer {
+  color: #fff;
+  margin: auto;
+  bottom: 0;
+  background-color: #0a0911;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.2rem;
+}
+
+footer p {
+  margin: 0.2em;
+  text-align: center;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About Page */
+.about-container {
+  margin: auto;
+  padding: 3rem 7rem;
+}
+
+.about h2 {
+  font-size: x-large;
+}
+
+.about p {
+  text-align: left;
+  font-size: large;
+  /* font-family: "Alegreya Sans", sans-serif; */
 }
