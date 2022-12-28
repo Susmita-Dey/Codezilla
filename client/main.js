@@ -11,12 +11,11 @@ document.querySelector("#mySidebar .closeBtn").addEventListener("click", () => {
 })
 
 // Toggle mode
-function toggleMode() {
-  console.log("lol")
+document.querySelector('#lightDarkButton').addEventListener("click", function toggleMode() {
   var element = document.body;
   var eleApp = document.getElementById("#app");
   element.classList.toggle("light-mode");
-}
+})
 
 // footer position fixed/absolute
 const showOnPx = 50;
