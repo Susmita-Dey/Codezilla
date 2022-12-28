@@ -147,7 +147,7 @@ main p {
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 #chat_container {

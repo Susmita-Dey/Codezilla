@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codezilla - Your Favourite Coding AI(Powered by OpenAI)</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
@@ -13,10 +13,8 @@
         <h1><a href="/">Codezilla</a></h1>
         <!-- sidebar  -->
         <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="about.html">About</a>
+          <a class="closeBtn">&times;</a>
+          <a href="/">Home</a>
           <a href="https://github.com/Susmita-Dey/Codezilla" target="_blank"
             >Source Code</a
           >
@@ -28,11 +26,11 @@
           <a href="https://bio.link/susmitadey" target="_blank">Contact Us</a>
         </div>
         <div id="mainNav">
-          <button class="openBtn" onclick="openNav()">&#9776;</button>
+          <button class="openBtn">&#9776;</button>
         </div>
 
         <!-- ligt/dark mode toggle -->
-        <div class="toggle-btn" onclick="toggleMode()">
+        <div class="toggle-btn" id="lightDarkButton">
           <button class="switchBtn">&#x1F4A1;</button>
         </div>
       </nav>
@@ -70,7 +68,7 @@
       </p>
       <p>All rights reserved.</p>
     </footer>
-    <script src="./main.js"></script>
+    <script type="module" src="../main.js"></script>
     <!-- <script type="module" src="script.js"></script> -->
   </body>
 </html>
