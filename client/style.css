@@ -135,6 +135,26 @@ main p {
   font-family: cursive;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: gold;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #343541;
+}
+
 #app {
   /* width: 100vw;
   height: 100vh; */
@@ -320,4 +340,16 @@ footer a {
   text-align: left;
   font-size: large;
   /* font-family: "Alegreya Sans", sans-serif; */
+}
+
+.buy-me-a-coffee img {
+  width: 15rem;
+  height: 5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .about-container {
+    margin: auto;
+    padding: 1rem;
+  }
 }
